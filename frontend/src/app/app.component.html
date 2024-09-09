@@ -1,17 +1,31 @@
 <div>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">Demo</a>
-    <div class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a routerLink="tutorials" class="nav-link">Tutorials</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="add" class="nav-link">Add</a>
-      </li>
+  <nav class="usa-nav">
+    <div class="usa-navbar">
+      <button class="usa-menu-btn" aria-label="Menu">Menu</button>
+      <div class="usa-logo">
+        <em class="usa-logo__text">
+          <a href="#" title="Home" aria-label="Home">Demo</a>
+        </em>
+      </div>
+    </div>
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close" aria-label="Close">
+        <img src="path/to/close-icon.svg" alt="Close">
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a href="tutorials" class="usa-nav__link">Tutorials</a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="add" class="usa-nav__link">Add</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <div class="container mt-3">
+  <main class="usa-section">
     <router-outlet></router-outlet>
-  </div>
+  </main>
 </div>
+
+
