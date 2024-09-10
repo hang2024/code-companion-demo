@@ -1,15 +1,15 @@
-<div class="list row">
-  <div class="col-md-8">
-    <div class="input-group mb-3">
+<div class="grid-row">
+  <div class="grid-col-8">
+    <div class="usa-input-group margin-bottom-3">
       <input
         type="text"
-        class="form-control"
+        class="usa-input"
         placeholder="Search by title"
         [(ngModel)]="title"
       />
-      <div class="input-group-append">
+      <div class="usa-input-group__append">
         <button
-          class="btn btn-outline-secondary"
+          class="usa-button usa-button--outline"
           type="button"
           (click)="searchTitle()"
         >
@@ -18,25 +18,22 @@
       </div>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="grid-col-6">
     <h4>Tutorials List</h4>
-    <ul class="list-group">
-      @for (tutorial of tutorials; track tutorial.id; let i = $index) {
-      <li
-        class="list-group-item"
-        [class.active]="i == currentIndex"
-        (click)="setActiveTutorial(tutorial, i)"
-      >
+    <ul class="usa-list usa-list--unstyled">
+      <li *ngFor="let tutorial of tutorials; let i = index" 
+          class="usa-list__item"
+          [class.usa-current]="i == currentIndex"
+          (click)="setActiveTutorial(tutorial, i)">
         {{ tutorial.title }}
       </li>
-      }
     </ul>
 
-    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTutorials()">
+    <button class="usa-button usa-button--secondary margin-top-3" (click)="removeAllTutorials()">
       Remove All
     </button>
   </div>
-  <div class="col-md-6">
+  <div class="grid-col-6">
     <app-tutorial-details
       [viewMode]="true"
       [currentTutorial]="currentTutorial"

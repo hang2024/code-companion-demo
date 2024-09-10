@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+/* Custom styles for the Angular Crud Demo */
+
+/* General body styling */
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Main content styling */
+#main-content {
+  padding: 2rem;
+}
+
+/* Custom header styling */
+.usa-header--basic {
+  background-color: #112e51;
+  color: #ffffff;
+}
+
+.usa-logo__text a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Custom footer styling */
+.usa-footer {
+  background-color: #112e51;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.usa-footer__contact-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #main-content {
+    padding: 1rem;
+  }
+
+  .usa-logo__text a {
+    font-size: 1.25rem;
+  }
+
+  .usa-footer__contact-links a {
+    font-size: 0.875rem;
+  }
+}

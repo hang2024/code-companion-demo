@@ -2,3 +2,38 @@
   max-width: 400px;
   margin: auto;
 }
+/* Custom styles for the form */
+.usa-form {
+  margin: 20px;
+}
+
+.usa-form-group {
+  margin-bottom: 20px;
+}
+
+.usa-label {
+  font-weight: bold;
+}
+
+.usa-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.usa-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.usa-button--primary {
+  background-color: #0071bc;
+  color: white;
+}
+
+.usa-button--primary:hover {
+  background-color: #005ea2;
+}

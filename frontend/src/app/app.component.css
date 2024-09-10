@@ -1,0 +1,72 @@
+/* Base styles for the navigation */
+.usa-nav {
+  background-color: #212121; /* Dark background color */
+  color: #ffffff; /* White text color */
+}
+
+.usa-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.usa-menu-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.usa-logo__text a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.usa-nav__inner {
+  display: none; /* Initially hidden for mobile view */
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.usa-nav__close {
+  background: none;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.usa-nav__primary {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.usa-nav__primary-item {
+  margin: 0.5rem 0;
+}
+
+.usa-nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+  .usa-nav__inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .usa-nav__primary-item {
+    margin: 0 1rem;
+  }
+}
+
+/* Show the menu when the button is clicked */
+.usa-nav__inner.show {
+  display: flex;
+}

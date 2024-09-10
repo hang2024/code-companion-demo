@@ -6,8 +6,41 @@
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- USWDS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uswds@2.11.2/dist/css/uswds.min.css">
   </head>
   <body>
-    <app-root></app-root>
+    <!-- USWDS Header -->
+    <header class="usa-header usa-header--basic">
+      <div class="usa-nav-container">
+        <div class="usa-navbar">
+          <div class="usa-logo" id="basic-logo">
+            <em class="usa-logo__text">
+              <a href="/" title="Home" aria-label="Home">Angular Crud Demo</a>
+            </em>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <app-root></app-root>
+    </main>
+
+    <!-- USWDS Footer -->
+    <footer class="usa-footer">
+      <div class="usa-footer__primary-section">
+        <div class="usa-grid">
+          <div class="usa-footer__contact-links">
+            <a href="mailto:info@agency.gov">info@agency.gov</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- USWDS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/uswds@2.11.2/dist/js/uswds.min.js"></script>
   </body>
 </html>
+
