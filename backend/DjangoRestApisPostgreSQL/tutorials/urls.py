@@ -1,9 +1,11 @@
-from django.urls import re_path
+# urls.py in your 'tutorials' app
 
-from tutorials import views 
- 
-urlpatterns = [ 
-    re_path(r'^api/tutorials$', views.tutorial_list),
-    re_path(r'^api/tutorials/(?P<pk>[0-9]+)$', views.tutorial_detail),
-    re_path(r'^api/tutorials/published$', views.tutorial_list_published)
+from django.urls import path
+from tutorials import views
+
+urlpatterns = [
+    path('tutorials/', views.tutorial_list, name='tutorial_list'),
+    path('tutorials/<int:pk>/', views.tutorial_detail, name='tutorial_detail'),
+    path('tutorials/published/', views.tutorial_list_published, name='tutorial_list_published'),
 ]
+
